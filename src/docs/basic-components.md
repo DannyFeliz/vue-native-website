@@ -141,8 +141,8 @@ One of the drawbacks using Flatlist is the renderItem method should return JSX w
 ```html
 <template>
     <flat-list
-        :data="{[{key: 'a'}, {key: 'b'}]}"
-        :render-item="{({item}) => renderList(item)"
+        :data="[{key: 'a'}, {key: 'b'}]"
+        :render-item="({item}) => renderList(item)"
     />
 </template>
 ```
@@ -286,7 +286,8 @@ A wrapper for making views respond properly to touches. On press down, the opaci
 <script>
     export default {
         methods: {
-            onPressButton: function() {
+            onPressButton: 
+            () {
                 alert('Clicked Image')
             }
         }
